@@ -110,7 +110,7 @@ app.get("/analyze", async (req, res) => {
         console.log("=== DEBUG: Buffer data before sending ===");
         console.log("Data:", data);
 
-        const response = await axios.post("http://127.0.0.1:8000/detect", {
+        const response = await axios.post("https://oil-ai-service.onrender.com/detect", {
             values: data,
         });
 
