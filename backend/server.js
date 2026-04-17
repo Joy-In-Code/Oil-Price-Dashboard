@@ -51,7 +51,6 @@ const PORT = process.env.PORT || 5000;
 const buffer = new CircularBuffer(10);
 const axios = require("axios");
 const yahooFinance = require("yahoo-finance2").default;
-const yahooFinance = new YahooFinance();
 
 app.use(express.json());
 app.use(cors());
