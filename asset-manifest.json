@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Oil-Price-Dashboard/static/css/main.76c49167.css",
+    "main.js": "/Oil-Price-Dashboard/static/js/main.4952b5e8.js",
+    "static/js/453.825386d9.chunk.js": "/Oil-Price-Dashboard/static/js/453.825386d9.chunk.js",
+    "index.html": "/Oil-Price-Dashboard/index.html",
+    "main.76c49167.css.map": "/Oil-Price-Dashboard/static/css/main.76c49167.css.map",
+    "main.4952b5e8.js.map": "/Oil-Price-Dashboard/static/js/main.4952b5e8.js.map",
+    "453.825386d9.chunk.js.map": "/Oil-Price-Dashboard/static/js/453.825386d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76c49167.css",
+    "static/js/main.4952b5e8.js"
+  ]
+}
