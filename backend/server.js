@@ -99,7 +99,7 @@ function getSeverity(latency) {
 function generateInsight(service, latency, isNetworkWide) {
     if (isNetworkWide) return "Severe network congestion affecting multiple routes.";
     if (latency > 1500) return "Critical timeout or routing loop detected.";
-    
+
     switch (service) {
         case "YouTube": return "Video delivery network bottleneck or edge node delay.";
         case "Google": return "Search backend processing delay or DNS resolution spike.";
@@ -199,7 +199,7 @@ app.get("/report", (req, res) => {
 
     for (const service of services) {
         const sData = grouped[service.name] || [];
-        
+
         // Handle edge case: insufficient data
         if (sData.length < 10) {
             report[service.name] = { message: "Not enough data yet" };
@@ -250,7 +250,7 @@ app.get("/export", (req, res) => {
     text += "=======================\n\n";
     text += "Timestamp | Service | Latency (ms) | Severity | Anomaly\n";
     text += "--------------------------------------------------------\n";
-    
+
     data.forEach(d => {
         const dateStr = new Date(d.timestamp).toLocaleString();
         const severity = getSeverity(d.latency);
